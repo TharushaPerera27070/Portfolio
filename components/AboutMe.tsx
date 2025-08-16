@@ -106,7 +106,7 @@ export default function AboutMe() {
               <div>
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-4">
                   THARUSHA <span className="text-gray-500">PERERA</span>
-                  <span className="text-orange-500">.</span>
+                  <span className="text-red-500">.</span>
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-400 mb-6">
                   Computer Science Undergraduate
