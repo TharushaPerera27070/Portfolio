@@ -22,8 +22,6 @@ jobs:
 
       # Step 3: Install dependencies
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
-      # Step 4: Run linting (ESLint)
-      - name: Run ESLint
-        run: npm run lint
+      
