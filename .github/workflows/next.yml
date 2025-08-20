@@ -24,4 +24,14 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      
+      # Step 4: Build project (if you have a build step)
+      - name: Build project
+        run: npm run build
+
+      # Step 5: Deploy to Firebase
+      - name: Deploy to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
+          channelId: live
+          projectId: tharusha-dev 
